@@ -1,0 +1,52 @@
+.sidebar {
+    width: 250px;
+    min-width: 250px;
+    border-right: 1px solid $border-color;
+    padding: 10px 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: 300ms width,300ms min-width;
+    
+    @media (max-width: 1197px) {
+      display: none;
+    }
+
+  ul {
+    padding: 0 10px;
+
+    li {
+      margin-bottom: 5px;
+
+      a {
+        display: flex;
+        align-items: center;
+        padding: 9px 12px;
+        width: 100%;
+        font-size: 15px;
+        font-weight: 500;
+        color: $sidebar-color;
+        font-size: 15px;
+        font-weight: 500;
+        border-radius: 4px;
+
+        &:hover {
+          background-color: $grey;
+          color: $light;
+        }
+      }
+    }
+  }
+
+  .sidebar-hr {
+    margin: 20px 0;
+    height: 1px;
+
+    @media (max-width: 1197px) {
+      background-color: $border-color;
+    }
+  
+}
+
+
+}

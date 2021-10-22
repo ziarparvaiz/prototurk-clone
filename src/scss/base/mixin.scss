@@ -1,0 +1,30 @@
+// Mixins
+@mixin transitionEffect($par) {
+    transition: $par all;
+    -webkit-transition: $par all;
+    -moz-transition: $par all;
+    -ms-transition: $par all;
+    -o-transition: $par all;
+  }
+  
+  @mixin borderRius($par) {
+    border-radius: $par;
+    -webkit-border-radius: $par;
+    -moz-border-radius: $par;
+    -ms-border-radius: $par;
+    -o-border-radius: $par;
+  }
+  
+  @mixin centerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @mixin imageFit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
