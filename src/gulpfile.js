@@ -30,7 +30,7 @@ function browsersyncReload(cb){
 
 // Watch Task
 function watchTask(){
-  watch('*.html', browsersyncReload);
+  watch('../*.html', browsersyncReload);
   watch(['./scss/**/*.scss'], series(scssTask, browsersyncReload));
 }
 
