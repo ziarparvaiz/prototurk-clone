@@ -276,6 +276,7 @@ main {
           width: 100% !important;
         }
       }
+
       a {
         border: none !important;
       }
@@ -327,6 +328,76 @@ main {
       }
     }
     // Question-Part End
+
+
+    // Blog-Part Start
+    .blog-part {
+
+      .swiper-slide {
+        @media (max-width: 1197px) {
+          width: 100% !important;
+        }
+      }
+      
+      .blog {
+        border: 1px solid $border-color;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+
+
+        .blog-category {
+          font-size: 16px;
+          color: $dark;
+          padding: 5px 20px;
+          align-self: flex-start;
+          border-radius: 4px;
+          margin-bottom: 10px;
+        }
+
+        .javascript {
+          background-color: #f7df1e;
+        }
+        .css {
+          background-color: #0070BA;
+        }
+
+        .blog-title {
+          font-size: 20px;
+          font-weight: 500;
+          color: $white;
+          margin-bottom: 6px;
+        }
+
+        .blog-time {
+          color: $grey-dark;
+          font-size: 15px;
+          margin-bottom: 15px;
+        }
+
+        .user {
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+
+          .name {
+            font-size: 14px;
+            font-weight: 500;
+            opacity: 0.7;
+            color: $grey-dark;
+          }
+        }
+
+      }
+    }
+    // Blog-Part End
 
   }
   

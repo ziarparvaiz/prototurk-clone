@@ -25,3 +25,18 @@ const swiper_question_part = new Swiper(".question-part", {
 });
 
 // ----------------------------------------------------
+
+
+// ----------------------------------------------------
+// Home Page | .blog-part
+
+const swiper_blog_part = new Swiper(".blog-part", {
+  slidesPerView: 2,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+});
+
+// ----------------------------------------------------
