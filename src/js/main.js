@@ -40,3 +40,18 @@ const swiper_blog_part = new Swiper(".blog-part", {
 });
 
 // ----------------------------------------------------
+
+
+// ----------------------------------------------------
+// Home Page | .member-section
+
+const swiper_member_section = new Swiper(".member-section", {
+  slidesPerView: 5,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+});
+
+// ----------------------------------------------------
