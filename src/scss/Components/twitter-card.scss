@@ -1,6 +1,7 @@
 .twitter-card {
     padding: 20px 40px;
-    background-color: $twitter-color;
+    // background-color: $twitter-color;
+    background: linear-gradient(to bottom right, #1da1f2, #2563eb );
     color: $white;
     border-radius: 4px;
     display: flex;
