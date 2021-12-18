@@ -72,3 +72,13 @@ Close_LoginPopup.addEventListener('click', () => {
 })
 
 // ----------------------------------------------------
+
+// ----------------------------------------------------
+// Sidebar Open
+const sidebar = document.getElementById('sidebar')
+const Open_Sidebar = document.getElementById('Open-sidebar')
+
+Open_Sidebar.addEventListener('click', () => {
+  sidebar.classList.toggle('active')
+})
+// ----------------------------------------------------

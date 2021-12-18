@@ -1,16 +1,37 @@
 .sidebar {
+    display: block;
+    background-color: $dark;
     width: 250px;
-    min-width: 250px;
-    border-right: 1px solid $border-color;
+    min-width: 250px;border-right: 1px solid $border-color;
     padding: 10px 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: 300ms width, 300ms min-width;
+    position: relative;
+    display: flex;
+    flex-direction: column;
     overflow-x: hidden;
     overflow-y: auto;
     overflow-x: hidden;
-    transition: 300ms width,300ms min-width;
-    
+
+
     @media (max-width: 1197px) {
+      visibility: hidden;
       display: none;
+
+      &.active {
+        visibility: visible;
+        display: block;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        z-index: 15;
+        width: 100%;
+      }
     }
+  
+    
+    
 
   ul {
     padding: 0 10px;
@@ -45,8 +66,8 @@
     @media (max-width: 1197px) {
       background-color: $border-color;
     }
-  
-}
+
+  }
 
 
 }
