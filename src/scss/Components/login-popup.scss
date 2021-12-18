@@ -12,6 +12,7 @@
     background-color: rgba(0, 0, 0, 0.8);
     visibility: hidden;
     transition: 300ms all;
+    padding: 0 15px;
 
 
     .popup-inner {
@@ -22,9 +23,13 @@
     }
 
     .login-p {
-        width: 400px;
+        width: 440px;
         background-color: $popup-bg;
         padding: 20px;
+
+        @media(max-width: 807px) {
+            width: 100%;
+        }
 
         .popup-header {
             display: flex;
