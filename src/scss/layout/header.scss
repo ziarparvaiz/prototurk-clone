@@ -79,6 +79,7 @@ header {
         display: flex;
 
         .btn-user {
+            background-color: transparent;
 
             span {
                 @include centerFlex;
@@ -100,15 +101,17 @@ header {
                 }
             }
 
-            i {
-                display: none;
-                color: $primary;
+        }
 
-                @media (max-width: 1197px) {
-                    display: block;
-                    margin-left: -10px;
-                }
+        i {
+            display: none;
+            color: $primary;
+
+            @media (max-width: 1197px) {
+                display: block;
+                margin-left: -10px;
             }
         }
+
     }
 }

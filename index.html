@@ -34,13 +34,35 @@
     </form>
 
     <div class="header-user">
-      <a href="#" class="btn-user">
+      <button href="#" class="btn-user" id="Login_Popup">
         <span>Giriş yap</span>
         <i class="fas fa-user"></i>
-      </a>
+      </button>
     </div>
 
   </header>
+
+  <div class="login-popup">
+    <div class="popup-inner login-p">
+      <div title="cloen" class="popup-header">
+        <h4>Giriş yap</h4>
+          <svg id="Close_Login-Popup" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </div>
+      <div class="popup-content">
+        <form action="">
+          <label for="username" class="title">Kullanıcı adı</label>
+          <input type="text" id="username" required>
+          <label for="password" class="title">Şifre</label>
+          <input type="password" id="password" required>
+          <button class="login-btn" type="submit">Giriş yap</button>
+        </form>
+      </div>
+      <div class="popup-footer">
+        <div class="a-account">Hesabın yok mu?</div>
+        <button id="Register-Popup">Kayıt ol</button>
+      </div>
+    </div>
+  </div>
   <!-- Header End -->
 
   <!-- Main Start -->
