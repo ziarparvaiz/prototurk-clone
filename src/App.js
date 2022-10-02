@@ -1,10 +1,8 @@
+import { useRoutes } from 'react-router-dom';
+import routes from "./Routes";
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Prototurk.com Clone</h1>    
-    </div>
-  );
+  return useRoutes(routes);
 }
 
 export default App;
