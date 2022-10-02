@@ -1,0 +1,120 @@
+@use "../../scss/abstracts/" as *;
+
+.Login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__Logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+
+    img {
+      width: 100px;
+      height: 40px;
+      object-fit: cover;
+      margin-right: 12px;
+    }
+
+    h2 {
+      font-size: 35px;
+      font-weight: 600;
+    }
+  }
+
+  &__Form {
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    height: 100%;
+    padding: 32px 38px;
+    margin-bottom: 26px;
+    border-radius: 5px;
+    background-color: var(--dark);
+
+    h3 {
+      margin-bottom: 22px;
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--light);
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 14px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      color: var(--gray--900);
+
+      input {
+        background: transparent;
+        color: var(--light);
+        background-color: var(--dark-Dark);
+        width: 100%;
+        font-size: 14px;
+        font-weight: 400;
+        height: 45px;
+        padding: 0px 18px;
+        margin-top: 8px;
+        border-bottom: 1px solid var(--success--700);
+        transition: 220ms all;
+
+        &:focus {
+          border-color: var(--success--900);
+        }
+      }
+    }
+
+    a {
+      margin-top: 12px;
+    }
+  }
+
+  &__JoinNow {
+    min-width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark);
+    padding: 16px 20px;
+    margin-bottom: 24px;
+    border-radius: 5px;
+
+    span {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--light);
+    }
+  }
+
+  &__Footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: var(--light);
+
+    & > a {
+      transition: 270ms all;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--success--900);
+      }
+    }
+  }
+}
