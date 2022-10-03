@@ -1,0 +1,70 @@
+@use "../../scss/abstracts/" as *;
+
+.sidebar {
+  display: block;
+  background-color: var(--dark-Dark);
+  width: rem(250);
+  min-width: rem(250);
+  border-right: rem(1) solid var(--gray--700);
+  padding: rem(10) 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: 300ms width, 300ms min-width;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  @media (max-width: rem(1197)) {
+    visibility: hidden;
+    display: none;
+
+    &.active {
+      visibility: visible;
+      display: block;
+      position: fixed;
+      top: rem(60);
+      left: 0;
+      z-index: 15;
+      width: 100%;
+    }
+  }
+
+  ul {
+    padding: 0 rem(10);
+
+    li {
+      margin-bottom: rem(5);
+
+      a {
+        display: flex;
+        align-items: center;
+        padding: rem(9) rem(12);
+        width: 100%;
+        font-size: rem(15);
+        font-weight: 500;
+        color: var(--gray--900);
+        font-size: rem(15);
+        font-weight: 500;
+        border-radius: rem(4);
+        cursor: pointer;
+
+        &:hover {
+          background-color: var(--dark);
+          color: var(--light);
+        }
+      }
+    }
+  }
+
+  .sidebar-hr {
+    margin: rem(20) 0;
+    height: rem(1);
+
+    @media (max-width: rem(1197)) {
+      background-color: var(--gray--800);
+    }
+  }
+}
