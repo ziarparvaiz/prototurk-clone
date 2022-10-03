@@ -1,10 +1,11 @@
 import React from "react";
 import "./Home.scss";
+import Header from "../../components/Header";
 
 function Home() {
   return (
     <>
-      <h1>Prototurk.com Clone</h1>
+      <Header />
     </>
   );
 }
