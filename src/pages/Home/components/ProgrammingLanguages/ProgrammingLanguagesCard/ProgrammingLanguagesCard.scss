@@ -1,0 +1,197 @@
+@use "../../../../../scss/abstracts/" as *;
+
+.ProgrammingLanguagesCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--gray--700);
+  padding: 20px;
+  transition: 260ms all;
+  cursor: pointer;
+
+  .icon {
+    @include centerFlex;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+
+    svg {
+      font-size: 50px;
+    }
+
+    &::before {
+      content: "";
+      width: 90px;
+      height: 90px;
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      border-radius: 50%;
+      z-index: -1;
+      opacity: 0.1;
+    }
+  }
+
+  .HTML {
+    color: #e54d27;
+    border: 1px solid #e54d27;
+
+    &::before {
+      content: "";
+      background-color: #e54d27;
+    }
+  }
+
+  .CSS {
+    color: #29a4d9;
+    border: 1px solid #29a4d9;
+
+    &::before {
+      content: "";
+      background-color: #29a4d9;
+    }
+  }
+
+  .JavaScript {
+    color: #f7df1e;
+    border: 1px solid #f7df1e;
+
+    &::before {
+      content: "";
+      background-color: #f7df1e;
+    }
+  }
+
+  .PHP {
+    color: #7478ae;
+    border: 1px solid #7478ae;
+
+    &::before {
+      content: "";
+      background-color: #7478ae;
+    }
+  }
+
+  .MySQL {
+    color: #4479a1;
+    border: 1px solid #4479a1;
+
+    &::before {
+      content: "";
+      background-color: #4479a1;
+    }
+  }
+
+  .Laravel {
+    color: #ff2d20;
+    border: 1px solid #ff2d20;
+
+    &::before {
+      content: "";
+      background-color: #ff2d20;
+    }
+  }
+
+  .Python {
+    color: #3372a5;
+    border: 1px solid #3372a5;
+
+    &::before {
+      content: "";
+      background-color: #3372a5;
+    }
+  }
+
+  .Git {
+    color: #f74e28;
+    border: 1px solid #f74e28;
+
+    &::before {
+      content: "";
+      background-color: #f74e28;
+    }
+  }
+
+  .text {
+    height: 36px;
+    padding: 0 20px;
+    color: var(--light);
+    @include centerFlex;
+    border-radius: 4px;
+  }
+
+  .btn-HTML {
+    background-color: #e54d27;
+  }
+
+  .btn-CSS {
+    background-color: #29a4d9;
+  }
+
+  .btn-JavaScript {
+    background-color: #f7df1e;
+  }
+
+  .btn-PHP {
+    background-color: #7478ae;
+  }
+
+  .btn-MySQL {
+    background-color: #4479a1;
+  }
+
+  .btn-Laravel {
+    background-color: #ff2d20;
+  }
+
+  .btn-Python {
+    background-color: #3372a5;
+  }
+
+  .btn-Git {
+    background-color: #f74e28;
+  }
+
+  .status {
+    padding-top: 20px;
+    border-top: 1px solid var(--gray--700);
+    margin-top: 20px;
+    display: flex;
+    color: var(--dark);
+    font-size: 14px;
+
+    .article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 15px;
+      text-align: center;
+      color: var(--light);
+
+      svg {
+        margin-bottom: 9px;
+        color: var(--gray--900);
+      }
+    }
+
+    .video {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: var(--light);
+
+      svg {
+        margin-bottom: 9px;
+        color: var(--gray--900);
+      }
+    }
+  }
+
+  &:hover {
+    border: 1px solid var(--dark);
+  }
+}

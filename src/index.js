@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import "swiper/css/bundle";
 import './scss/style.scss';
 import App from "./App";
 import { BrowserRouter } from 'react-router-dom'

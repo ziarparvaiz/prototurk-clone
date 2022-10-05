@@ -1,0 +1,234 @@
+@use "../../../../scss/abstracts/" as *;
+
+.mySwiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  padding-bottom: 0px;
+  z-index: 1;
+  padding-bottom: 40px !important;
+}
+
+.ProgrammingLanguages {
+  padding-bottom: 40px;
+  .swiper-slide {
+    width: 17.5% !important;
+
+    @media (max-width: 1197px) {
+      width: 48% !important;
+    }
+
+    @media (max-width: 817px) {
+      width: 45% !important;
+    }
+    
+    @media (max-width: 500px) {
+      width: 100% !important;
+    }
+
+    // .cardd {
+    //   display: flex;
+    //   flex-direction: column;
+    //   align-items: center;
+    //   border: 1px solid var(--gray--700);
+    //   padding: 20px;
+
+    //   .icon {
+    //     @include centerFlex;
+    //     width: 100px;
+    //     height: 100px;
+    //     border-radius: 50%;
+    //     position: relative;
+    //     z-index: 1;
+    //     margin-bottom: 10px;
+
+    //     i {
+    //       font-size: 50px;
+    //     }
+
+    //     &::before {
+    //       content: "";
+    //       width: 90px;
+    //       height: 90px;
+    //       position: absolute;
+    //       top: -5px;
+    //       right: -5px;
+    //       border-radius: 50%;
+    //       z-index: -1;
+    //       opacity: 0.1;
+    //     }
+    //   }
+
+    //   .html {
+    //     color: #e54d27;
+    //     border: 1px solid #e54d27;
+
+    //     &::before {
+    //       content: "";
+    //       background-color: #e54d27;
+    //     }
+    //   }
+
+    //   .css {
+    //     color: #29a4d9;
+    //     border: 1px solid #29a4d9;
+
+    //     &::before {
+    //       content: "";
+    //       background-color: #29a4d9;
+    //     }
+    //   }
+
+    //   .js {
+    //     color: #f7df1e;
+    //     border: 1px solid #f7df1e;
+
+    //     &::before {
+    //       content: "";
+    //       background-color: #f7df1e;
+    //     }
+    //   }
+
+    //   .php {
+    //     color: #7478ae;
+    //     border: 1px solid #7478ae;
+
+    //     &::before {
+    //       content: "";
+    //       background-color: #7478ae;
+    //     }
+    //   }
+
+    //   .mysql {
+    //     color: #4479a1;
+    //     border: 1px solid #4479a1;
+
+    //     &::before {
+    //       content: "";
+    //       background-color: #4479a1;
+    //     }
+    //   }
+
+    //   .laravel {
+    //     color: #ff2d20;
+    //     border: 1px solid #ff2d20;
+
+    //     &::before {
+    //       content: "";
+    //       background-color: #ff2d20;
+    //     }
+    //   }
+
+    //   .python {
+    //     color: #3372a5;
+    //     border: 1px solid #3372a5;
+
+    //     &::before {
+    //       content: "";
+    //       background-color: #3372a5;
+    //     }
+    //   }
+
+    //   .git {
+    //     color: #f74e28;
+    //     border: 1px solid #f74e28;
+
+    //     &::before {
+    //       content: "";
+    //       background-color: #f74e28;
+    //     }
+    //   }
+
+    //   .text {
+    //     height: 36px;
+    //     padding: 0 20px;
+    //     color: var(--light);
+    //     @include centerFlex;
+    //     border-radius: 4px;
+    //   }
+
+    //   .btn-html {
+    //     background-color: #e54d27;
+    //   }
+
+    //   .btn-css {
+    //     background-color: #29a4d9;
+    //   }
+
+    //   .btn-js {
+    //     background-color: #f7df1e;
+    //   }
+
+    //   .btn-php {
+    //     background-color: #7478ae;
+    //   }
+
+    //   .btn-mysql {
+    //     background-color: #4479a1;
+    //   }
+
+    //   .btn-laravel {
+    //     background-color: #ff2d20;
+    //   }
+
+    //   .btn-python {
+    //     background-color: #3372a5;
+    //   }
+
+    //   .btn-git {
+    //     background-color: #f74e28;
+    //   }
+
+    //   .status {
+    //     padding-top: 20px;
+    //     border-top: 1px solid var(--gray--700);
+    //     margin-top: 20px;
+    //     display: flex;
+    //     color: var(--dark);
+    //     font-size: 14px;
+
+    //     .article {
+    //       display: flex;
+    //       flex-direction: column;
+    //       align-items: center;
+    //       margin-right: 15px;
+    //       text-align: center;
+    //       color: var(--light);
+
+    //       svg {
+    //         margin-bottom: 9px;
+    //         color: var(--gray--900);
+    //       }
+    //     }
+
+    //     .video {
+    //       display: flex;
+    //       flex-direction: column;
+    //       align-items: center;
+    //       text-align: center;
+    //       color: var(--light);
+
+    //       svg {
+    //         margin-bottom: 9px;
+    //         color: var(--gray--900);
+    //       }
+    //     }
+    //   }
+
+    //   &:hover {
+    //     border: 1px solid #474747;
+    //   }
+    // }
+  }
+}
+
+.swiper-pagination-bullet-active-next,
+.swiper-pagination-bullet-active-next-next,
+.swiper-pagination-bullet-active-prev {
+  background-color: var(--light);
+}
