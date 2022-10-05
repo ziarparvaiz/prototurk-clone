@@ -3,6 +3,7 @@ import "./Home.scss";
 import Header from "../../components/Header";
 import Sidebar from "../../components/Sidebar";
 import ProgrammingLanguages from "./components/ProgrammingLanguages";
+import TwitterCard from "./components/TwitterCard";
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
               Prototürk!
             </p>
             <ProgrammingLanguages />
+            <TwitterCard />
           </div>
         </div>
       </main>
