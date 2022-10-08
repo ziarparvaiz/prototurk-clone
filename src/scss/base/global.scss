@@ -1,1 +1,7 @@
+@use "../abstracts/" as *;
 // Global
+
+.hr-big {
+  margin: rem(40) 0;
+  border: rem(1) solid var(--gray--700);
+}
