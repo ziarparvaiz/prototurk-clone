@@ -5,6 +5,7 @@ import Sidebar from "../../components/Sidebar";
 import ProgrammingLanguages from "./components/ProgrammingLanguages";
 import TwitterCard from "./components/TwitterCard";
 import InstagramCard from "./components/InstagramCard";
+import TelegramCard from "./components/TelegramCard";
 
 function Home() {
   return (
@@ -24,6 +25,8 @@ function Home() {
             <TwitterCard />
             <div className="hr-big"></div>
             <InstagramCard />
+            <div className="hr-big"></div>
+            <TelegramCard />
           </div>
         </div>
       </main>
